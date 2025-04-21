@@ -9,6 +9,19 @@ body{
     padding: 0;
 }
 
+.brand-name {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    font-family: serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    text-decoration-line: line-through;
+}
+
 .top {
     display: flex;
     justify-content: center;
@@ -43,6 +56,7 @@ body{
     width: 40vw;
 }
 .right {
+   
     box-sizing: border-box;
     color: white;
     min-height: 94vh;
@@ -73,7 +87,7 @@ form {
     min-width: 35%;
     margin: 50px;
     width:  100%;
-    border-radius: 2%;;
+    border-radius: 2%;
     transition-delay: color 1s;
 }
 #f  *{
@@ -86,6 +100,11 @@ form {
     margin-top: 15px;
     margin-bottom: 5px;
     text-transform: capitalize;
+}
+#f input{
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
 }
 .buttons{
     box-sizing: border-box;
@@ -102,4 +121,8 @@ form {
     width: 80px;
     height: 40px;
     border-radius: 10%;
+    border: none;
+}
+#p:invalid , #cp:invalid{
+    border: solid red 4px;
 }
