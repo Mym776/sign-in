@@ -2,18 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Sign in</title>
-
+    <script src="assets/script/script.js" defer></script>
 </head>
-<body>
+<body >
+    <div class="top">
+        <p class="brand-name">
+            hello there
+        </p>
+    </div>
     <div class="main">
         <div class="left">
-            <h1 class="title">Welcome to the sign in page</h1>
         </div>
-    <div class="right">
-    </div>
+        <div class="right">
+            <h1 class="title">Welcome to the sign in page</h1>
+            <form action="#" method="post">
+                <fieldset id="f">
+                    <legend >Sign up</legend>
+                    <label for="fname">first name</label>
+                    <input type="text" minlength="2" maxlength="20" id="fname" name="fname" required>
+                    <label for="lname">last name</label>
+                    <input type="text" minlength="2" maxlength="20" id="lname" name="lname" required>
+                    <label for="email">email</label>
+                    <input type="email" minlength="5" maxlength="30" id="email" name="email" required>
+                    <label for="passwd">password</label>
+                    <input type="password" minlength="8" maxlength="20" id="passwd" name="passwd" required>
+                    <label for="cpasswd">Confirm password</label>
+                    <input type="password" minlength="8" maxlength="20" id="cpasswd" name="cpasswd" required>
+                    <div class="buttons">
+                        <button type="submit" >submit</button>
+                        <button type="reset" >reset</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>
     </div>
 </body>
 </html>
